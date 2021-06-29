@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href="./assets/css/misEstilos.css">
+    <title>Consumo Api</title>
+</head>
+<body>
+    <h1> Ejemeplo Cosumo Api con Java Scrip </h1>
+
+
+     <!-- ...........................................................................  formulario insertar -->
+    <div class="contenedorForm" id="contenidoForm">
+          <!-- Agregar-->
+
+        <form id="formularioRegistro" >
+            <div class="contenedorInputText">
+                <input class="inputText" type="text" id="codigoIn" placeholder="Codigo" required >
+                <input class="inputText" type="text" id="nombreIn" placeholder="Nombre" required>
+                <input class="inputText" type="text" id="correoIn" placeholder="Correo" required>
+            </div>
+            <div class="contenedorInputText">
+                <input class="inputText" type="text" id="nota1In" placeholder="Nota 1" size="4" required>
+                <input class="inputText" type="text" id="nota2In" placeholder="Nota 2" size="4" required>
+                <input class="inputText" type="text" id="nota3In" placeholder="Nota 3" size="4" required>
+                <div>
+                    <input class="btn" type="submit" value="Enviar" id="submit">
+                </div>
+            </div>
+        </form>
+
+        <!-- Editar-->
+        <hr/>
+
+        <form id="formularioUpdate" >
+            <div class="contenedorInputText">
+                <input class="inputText" type="text" id="codigoUp" placeholder="Codigo" required disabled >
+                <input class="inputText" type="text" id="nombreUp" placeholder="Nombre" required>
+                <input class="inputText" type="text" id="correoUp" placeholder="Correo" required>
+            </div>
+            <div class="contenedorInputText">
+                <input class="inputText" type="text" id="nota1Up" placeholder="Nota 1" size="4" required>
+                <input class="inputText" type="text" id="nota2Up" placeholder="Nota 2" size="4" required>
+                <input class="inputText" type="text" id="nota3Up" placeholder="Nota 3" size="4" required>
+                <div id="contenedorBtnActualizar">
+                    <input class="btn" type="submit" value="Actualizar" id="submit">
+                </div>
+            </div>
+        </form>
+
+       
+
+    </div>
+
+  
+    <div id="errorApi"></div>
+
+    <div class="contenedorTable" id="contenidoApi"> </div>
+    
+    <script src="./assets/js/apiLogic.js"></script>
+</body>
+</html>
